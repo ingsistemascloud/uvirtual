@@ -15,7 +15,7 @@ services:
     image: ingsistemascloud/vpl
     cap_add: ["SYS_ADMIN"]
     volumes:
-      - ${VPL_LOG_FOLDER}:/etc/vpl
+      - ${VPL_LOG_FILE}:/etc/vpl/vpl-jail-service.log
     ports: 
       - ${VPL_NETWORK}:${VPL_PORT}:80
     
