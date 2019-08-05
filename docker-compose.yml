@@ -12,7 +12,7 @@ services:
       - ${MOODLE_NETWORK}:${MOODLE_PORT}:80
   
   vpl:
-    image: vpljailtest
+    image: ingsistemascloud/vpl
     cap_add: ["SYS_ADMIN"]
     volumes:
       - ${VPL_LOG_FOLDER}:/etc/vpl
