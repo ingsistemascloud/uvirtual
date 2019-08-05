@@ -1,7 +1,7 @@
 version: '3'
 services:
   uvirtual:
-    image: carlos22ivan/moodle-docker
+    image: ingsistemascloud/moodle
     volumes:
       - ${MOODLE_FOLDER}:/var/www/html/moodle
       - ${MOODLEDATA_FOLDER}:/var/www/html/moodledata
